@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<title>:::::Cadastro de Tarefas:::::</title>
+</head>
+<script>
+$(document).ready(function() {
+    $('.abrir_janela').click(function(){
+	$('#bgshadow').css({opacity:0.6});
+	$('#bgshadow').fadeIn(300);
+	$('#janela').fadeIn(1000);
+	
+	return false;
+	});
+	
+	$('#bgshadow, #fechar').click(function(){
+		$('#bgshadow, #janela').fadeOut(300);
+	});
+});
+</script>
+<style type="text/css">
+*{ margin:0px; padding:0px; text-decoration:none}
+.abrir_janela{ color:#000; font:Arial, Helvetica, sans-serif}
+#janela{ width:500px; min-height:300px; position:absolute; left:50%; top:45%; background-color:#FFF;
+margin-left:-290px; margin-top:-160px; z-index:1; display:none;}
+#fechar{ width:100px; height:50px; position:absolute; top:0px; right:-75px; color:#FFF; z-index:2}
+#bgshadow{ width:100%; min-height:100%; background:#000; position:absolute; left:0px;
+top:0px; display:none; z-index:0;}
+
+
+</style>
+
+<form action="" method="" style="font-family:Arial, Helvetica, sans-serif">
+	<font face="Arial, Helvetica, sans-serif"><center><br />
+    <h1>Cadastro de Tarefas</h1><br /><br />
+	<fieldset style="position:relative; height:250px; width:400px; border-color:red;">
+    <legend>Cadastro</legend>
+    <table border="0" style="position:relative; color:black; left:40px;">
+		<tr>
+            <td><label for="txtTarefa">Tarefa: </label></td>
+            <td><input type="text" name="txtProjeto"></td>
+		</tr><tr>
+            <td><label for="txtDtInicio">Data de In&iacute;cio: </label></td>
+            <td><input type="text" name="txtDtInicio"></td>
+		</tr><tr>
+            <td><label for="txtDtFinal">Data Final: </label></td>
+            <td><input type="text" name="txtDtFinalReal"></td>
+		</tr><tr>
+            <td><label for="txtDtFinal">Requisitos: </label></td>
+            <td><select>
+			<option>Requisito 1</option>
+			<option>Requisito 2</option>
+			<option>Requisito 3</option>
+			<option>Requisito 4</option>
+            <option>Requisito 5</option>
+            <option>Requisito 6</option>
+            <option>Requisito 7</option>
+            <option>Requisito 8</option>
+            <option>Requisito 9</option>
+			</select>
+            <input type="button" name="btnNovaCombo" value="Nova" /></td>
+		</tr><tr>
+            <td><label for="txtPrioridade">Prioridade: </label></td>
+            <td><input type="text" name="txtPrioridade"></td>
+		</tr><tr>
+            <td><label for="txtDesempenhado">Desempenhado por: </label></td>
+            <td><input type="text" name="txtDesempenhado" disabled="disabled"></td>
+		</tr><tr>
+            <td><label for="txtStatus">Status: </label></td>
+            <td><input type="text" name="txtStatus"></td>
+		</tr>
+	</table>
+    <br />
+    <input type="button" name="btnCadastrar" value="Cadastrar">
+    <a class="abrir_janela" href="#"><input type="button" name="btnNovaAtividade" value="Nova Atividade" /></a>
+    </center>    
+    </fieldset>
+    <div id="janela">
+    <div id="fechar"><a href="#">[X]</a></div>
+    <iframe width="500px" height="300px" align="middle" scrolling="no" frameborder="0" allowfullscreen src="Cadastro de Atividades.html">
+    </iframe>
+    </div>
+    <div id="bgshadow"></div>
+    </font>
+</form>
+</html>

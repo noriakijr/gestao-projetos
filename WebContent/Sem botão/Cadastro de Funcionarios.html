@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="PaginaEstilo.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>:::::Cadastro de Funcion&aacute;rios::::::</title>
+<script><!--Mensagem-->
+$(document).ready(function() {
+    $('.abrir_janela_mensagem').click(function(){
+	$('#bgshadowMensagem').css({opacity:0.6});
+	$('#bgshadowMensagem').fadeIn(300);
+	$('#janelaMensagem').fadeIn(1000);
+	
+	return false;
+	});
+	
+	$('#bgshadowMensagem, #fecharMensagem').click(function(){
+		$('#bgshadowMensagem, #janelaMensagem').fadeOut(300);
+	});
+});
+</script>
+
+<!--Mensagem-->
+<style type="text/css">
+*{ margin:0px; padding:0px; text-decoration:none}
+.abrir_janela_mensagem{ color:#000; font:Arial, Helvetica, sans-serif}
+#janelaMensagem{ width:500px; min-height:400px; position:absolute; left:50%; top:45%; background-color:#FFF;
+margin-left:-290px; margin-top:-160px; z-index:1; display:none;}
+#fecharMensagem{ width:100px; height:50px; position:absolute; top:0px; right:-75px; color:#FFF; z-index:2}
+#bgshadowMensagem{ width:100%; min-height:1000px; background:#000; position:absolute; left:0px;
+top:0px; display:none; z-index:0;}
+</style>
+</head>
+
+<body bgcolor="#555555">
+<!--CABEÇALHO-->
+<div id="CABECALHO"></div>
+<!--Inicio CENTRALIZAR-->
+<div id="CENTRALIZAR_BODY">
+<!--Inicio BODY-->
+<div id="BODY">
+  <!--Inicio LOGO-->
+  <div style="position:relative; width:140px; left:558px; "><img src="Logo FANPK.jpg" /></div>
+  <div id="LOGO">
+  	<font face="Arial, Helvetica, sans-serif" size="+5">SGP</font><br /><br />
+    Sistema de Gerenciamento de Projetos
+  </div><!--Fim LOGO-->
+  <!--Inicio BANNER-->
+  <div id="BANNER"><img src="Gerenciamento-de-Projetos.jpg"/></div><!--Fim BANNER-->
+  <!--Inicio menu-->
+  <div id="MENU">
+  	<ul class="menu" style="background-color:#03C; border:0;">
+    	<li style="border-right:#03C;"><img src="faceMensage.png" width="26px" height="26px"/>
+        	<ul>
+            	<li><a href="#">Mensagem 1</a></li>
+        		<li><a href="#">Mensagem 2</a></li>
+                <li><a class="abrir_janela_mensagem" href="#">Nova Mensagem</a></li>
+            </ul>    
+        </li>
+    </ul>
+    <ul class="menu" style="background-color:#03C; border:0; padding:10px"></ul>
+  <nav>
+      <ul class="menu">
+      	<li><a href="Home.html">Home</a></li>
+        <li><a href="#">Projeto</a>
+        <ul>
+        	<li><a href="Cadastro de Projeto.html">Cadastro do Projeto</a></li>
+        </ul></li>
+        <li><a href="Cadastro de Funcionarios.html">Cadastro de Funcionários</a></li>
+        <li><a href="Tarefas.html">Tarefas</a></li>
+        <li><a href="Atividades.html">Atividades</a></li>
+        <li><a href="#">Relatório</a>
+        <ul>
+        	<li><a href="#">Custo</a></li>
+            <li><a href="#">Tempo</a></li>
+            <li><a href="#">Tarefa</a></li>
+            <li><a href="#">Desempenho Pessoal</a></li>
+        </ul></li>
+        <li><a href="#">Contatos</a></li>
+        <li><a href="Login.html">Sair</a></li>
+      </ul>
+  </nav></div><!--Fim menu-->
+  <form id="form1" name="form1" method="post" action="" style="font-family:Arial, Helvetica, sans-serif;">
+  	<br /><br />
+    <center><h1>Cadastro de Funcion&aacute;rios</h1><br /><br /><br />
+    <fieldset style="position:relative; height:360px; width:400px; border-color:red;">
+    <legend>Cadastro</legend>
+    <table border="0" style="color:black;">
+      <tr>
+        <td><label>C&oacute;digo: </label></td>
+        <td><input name="funcCodigo" type="text" maxlength="10" /><br/></td>
+      </tr>
+      <tr>
+        <td><label>Nome: </label></td>
+        <td><input name="funcNome" type="text" maxlength="40" /><br/></td>
+      </tr>
+      <tr>
+        <td><label>Telefone: </label></td>
+        <td><input name="funcTelefone" type="text" maxlength="9" /><br/></td>
+      </tr>
+      <tr>
+        <td><label>E-mail: </label></td>
+        <td><input name="funcEmail" type="text" maxlength="70" /><br/></td>
+      </tr>
+      <tr>
+        <td><label>Habilidades: </label></td>
+        <td><select multiple="multiple">
+		<option>Habilidade 1</option>
+        <option>Habilidade 2</option>
+        <option>Habilidade 3</option>
+        <option>Habilidade 4</option>
+        <option>Habilidade 5</option>
+        <option>Habilidade 6</option>
+		<option>Habilidade 7</option>
+		<option>Habilidade 8</option>
+		<option>Habilidade 9</option>
+		</select><br/></td>
+      </tr>
+      <tr>
+        <td><label>Login: </label></td>
+        <td><input name="userLogin" type="text" maxlength="30" /><br/></td>
+      </tr>
+      <tr>
+        <td><label>Senha: </label></td>
+        <td><input name="userSenha" type="text" maxlength="12" /><br/></td>
+      </tr>
+      <tr>
+      	<td><label>Perfil de Usuário:</label></td>
+        <td></td>
+      </tr>
+      <tr>
+      	<td><label>
+            <input type="radio" name="rdgPerfil" value="radio" id="rdgPerfil_0" />
+            Gestor</label></td>
+        <td></td>
+      </tr>
+      <tr>
+      	<td><label>
+            <input type="radio" name="rdgPerfil" value="radio" id="rdgPerfil_1" />
+            Funcionário</label></td>
+        <td></td>
+      </tr>
+    </table>
+    <br/>
+    <input type="button" name="funcCadastrar" id="funcCadastrar" value="Cadastrar" />
+    <input type="button" name="funcAlterar" id="funcAlterar" value="Alterar" />
+    <input type="button" name="funcPesquisar" id="funcPesquisar" value="Pesquisar" />
+    <input type="button" name="funcExcluir" id="funcExcluir" value="Excluir" />
+    <br/></center>
+    </fieldset>
+    <div id="janelaMensagem">
+    <div id="fecharMensagem"><a href="#">[X]</div>
+    <iframe width="500px" height="400px" frameborder="0" allowfullscreen src="MensagemBox.html">
+    </iframe>
+    </div>
+    <div id="bgshadowMensagem"></div>
+  </form>
+</div><!--Fim BODY-->
+</div><!--Fim CENTRALIZAR-->
+<!--RODAPÉ-->
+<div id="RODAPE"></div>
+</body>
+</html>

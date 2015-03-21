@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!--Página Geral-->
+<style type="text/css">
+
+#CABECALHO{ position:absolute; width:700px; height:10px;}
+#LOGO{ position:relative; width:400px; height:0px; bottom:105px; left:20px;
+	font-family:Arial, Helvetica, sans-serif; font-size:12px}
+#BANNER{ border-top:1px solid #000;}
+#BODY{ position:absolute; min-width:700px; min-height:900px; top:10px; 
+	border:0.2em solid; box-shadow: black 0.4em 0.4em 0.8em; background-color:#FFF}
+#CENTRALIZAR_BODY{ width:760px; margin:0 auto; padding:10px; text-align:left;}
+#MENU{ position:relative; width:680px; height:30px; padding:10px; 
+	border-bottom:1px solid #00C; border-top:1px solid #000; background-color:#03C}
+#RODAPE{position: absolute; width: 700px; height: 100px; top: 910px;}
+
+</style>
+<!--Menu-->
+<style type="text/css">
+*{margin: 0; padding: 0;}
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+.vermelho{color: #F00;}
+.menu{list-style:none; border:1px solid #c0c0c0; float:left; background-color:#FFF; border-radius:0.5em}
+
+.menu li{position:relative; float:left; border-right:1px solid #c0c0c0; }
+
+.menu li a{color:#333; text-decoration:none; padding:5px 10px; display:block; }
+
+.menu li a:hover{background:#333; color:#fff; -moz-box-shadow:0 3px 10px 0 #CCC; -webkit-box-shadow:0 3px 10px 0 #ccc; text-shadow:0px 0px 5px #fff; }
+
+.menu li ul{position:absolute; top:25px; left:0; background-color:#fff; display:none; z-index:999999}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{border:1px solid #c0c0c0; display:block; width:150px;}
+</style>
+
+<!--SubJanela - Mensagem-->
+<style type="text/css">
+*{ margin:0px; padding:0px; text-decoration:none}
+.abrir_janela_mensagem{ color:#000; font:Arial, Helvetica, sans-serif}
+#janelaMensagem{ width:500px; min-height:400px; position:absolute; left:50%; top:50%; background-color:#FFF;
+margin-left:-290px; margin-top:-160px; z-index:1; display:none;}
+#fecharMensagem{ width:100px; height:50px; position:absolute; top:0px; right:-75px; color:#FFF; z-index:2}
+#bgshadowMensagem{ width:100%; min-height:1000px; background:#000; position:absolute; left:0px;
+top:0px; display:none; z-index:0;}
+</style>
+<!--SubJanela-->
+<style type="text/css">
+*{ margin:0px; padding:0px; text-decoration:none}
+.abrir_janela{ color:#000; font:Arial, Helvetica, sans-serif}
+#janela{ width:600px; min-height:400px; position:absolute; left:50%; top:45%; background-color:#FFF;
+margin-left:-290px; margin-top:-160px; z-index:1; display:none;}
+#fechar{ width:100px; height:50px; position:absolute; top:0px; right:-75px; color:#FFF; z-index:2}
+#bgshadow{ width:100%; min-height:1000px; background:#000; position:absolute; left:0px;
+top:0px; display:none; z-index:0;}
+</style>
