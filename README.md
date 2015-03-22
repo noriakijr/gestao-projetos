@@ -22,7 +22,7 @@ O projeto apresenta as seguintes funcionalidades:
 - Cadastro de Habilidades
 
 ### Ferramentas e tecnologias
-Foram utilidas as seguintes ferramentas e tecnologias:
+Foram utilizadas as seguintes ferramentas e tecnologias:
 - Eclipse
 - Apache Tomcat
 - PostgreSQL
