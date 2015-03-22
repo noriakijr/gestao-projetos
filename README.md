@@ -21,7 +21,8 @@ O projeto apresenta as seguintes funcionalidades:
 - Cadastro de Funcionarios
 - Cadastro de Habilidades
 
-### Ferramentas e tecnologias utilizadas
+### Ferramentas e tecnologias
+Foram utilidas as seguintes ferramentas e tecnologias:
 - Eclipse
 - Apache Tomcat
 - PostgreSQL
